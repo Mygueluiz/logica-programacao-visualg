@@ -1,2 +1,16 @@
-# logica-programacao-visualg
-Logic programming exercises developed in Visualg.
+# Lógica de Programação - VisualG
+
+Este repositório reúne os exercícios desenvolvidos durante meus estudos de lógica de programação utilizando VisualG.
+
+## Objetivos
+
+- Desenvolver raciocínio lógico
+- Aprender algoritmos
+- Construir uma base sólida antes de estudar Python, PHP e SQL
+
+## Exercícios
+
+- Estacionamento
+- Caixa de Supermercado
+
+> Novos exercícios serão adicionados conforme meu progresso.
