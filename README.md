@@ -12,5 +12,6 @@ Este repositório reúne os exercícios desenvolvidos durante meus estudos de l�
 
 - Estacionamento
 - Caixa de Supermercado
+- Validação e classificação de triângulos
 
 > Novos exercícios serão adicionados conforme meu progresso.
