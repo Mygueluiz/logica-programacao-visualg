@@ -1,0 +1,76 @@
+algoritmo "Sistema hard mercado"
+
+var
+
+Preco_Bruto: Real
+Preco_Final: Real
+Quantidade: Inteiro
+Produto: caracter
+
+inicio
+
+// =========================================================
+// Exercicio: Sistema de Mercado
+//
+// Descricaoo:
+// Programa desenvolvido em Visualg para praticar logica de
+// programacao, entrada e sa�da de dados, operadores
+// matematicos e estruturas condicionais.
+//
+// Funcionalidades:
+// - Cadastro de um produto;
+// - Calculo do valor bruto da compra;
+// - Aplicacao de desconto conforme o valor total;
+// - Exibicao do valor bruto, desconto e valor final.
+//
+// Tecnologias:
+// - Visualg
+// - Estruturas condicionais (SE / SEN�O)
+// - Variaveis e operadores aritmeticos
+// =========================================================
+
+Escreval("=======Myla Supermercados=======")
+Escreva("Digite o Produto: ")
+Leia(Produto)
+Escreva("Digite a quantidade: ")
+Leia(Quantidade)
+Escreva("Digite o valor: R$")
+Leia(Preco_Bruto)
+
+Preco_Final <- (Preco_Bruto*Quantidade)
+
+Escreval("--------------------------------")
+Escreva("Valor bruto: R$")
+Escreval(Preco_final)
+
+Escreva("Quantidade: ")
+Escreval(Quantidade)
+
+Escreva("Descontos: R$")
+se (Preco_Final>=100) e (Preco_Final<=500) entao
+Escreval(Preco_Final*(0.10))
+senao
+Se (Preco_Final>500) entao
+Escreval(Preco_Final*0.20)
+senao
+Escreval("0,00")
+fimse
+fimse
+
+Escreva("Valor total: R$")
+se (Preco_Final>=100) e (Preco_Final<=500) entao
+Escreval(Preco_final-(Preco_final*0.10))
+senao
+se (Preco_Final>500) entao
+Escreval(Preco_Final-(Preco_final*0.20))
+senao
+se (Preco_Final<100) entao
+Escreval(Preco_Final)
+fimse
+fimse
+fimse
+
+Escreval("================================")
+
+
+fimalgoritmo
