@@ -6,7 +6,7 @@ Este repositório reúne os exercícios desenvolvidos durante meus estudos de l�
 
 - Desenvolver raciocínio lógico
 - Aprender algoritmos
-- Construir uma base sólida antes de estudar Python, PHP e SQL
+- Construir uma base sólida antes de estudar Java, Python, PHP e SQL
 
 ## Exercícios
 
