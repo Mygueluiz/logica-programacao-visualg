@@ -13,5 +13,6 @@ Este repositório reúne os exercícios desenvolvidos durante meus estudos de l�
 - Estacionamento
 - Caixa de Supermercado - (Nível 1 e 2)
 - Validação e classificação de triângulos
+- Calculadora de IMC
 
 > Novos exercícios serão adicionados conforme meu progresso.
