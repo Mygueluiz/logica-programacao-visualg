@@ -17,4 +17,8 @@ Este repositório reúne os exercícios desenvolvidos durante meus estudos de l�
 - Sistema Criança Esperança
 - Cardápio lanchonete
 
+  ##Projetos
+
+  Controle de estoque
+ 
 > Novos exercícios serão adicionados conforme meu progresso.
