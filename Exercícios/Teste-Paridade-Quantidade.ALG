@@ -7,9 +7,12 @@ var
 
 inicio
 
-   Escreval("AtÈ que n˙mero contar")
+// Objetivo: Ler um n√∫mero limite e exibir todos os n√∫meros pares ou √≠mpares
+// at√© esse valor. Ao final, informar a quantidade de n√∫meros exibidos.
+
+   Escreval("At√© que n√∫mero contar")
    Leia(Numero)
-   Escreval("Qual a paridade (Õmpar ou Par?)")
+   Escreval("Qual a paridade (√çmpar ou Par?)")
    Leia(Paridade)
    se(Paridade = "par") entao
       Contador <-0
@@ -27,10 +30,10 @@ inicio
 
    se (Paridade= "par") entao
       Quantidade <- Contador/2
-      Escreval("Quantidade de n˙meros pares: " , Quantidade)
+      Escreval("Quantidade de n√∫meros pares: " , Quantidade)
    senao
       Quantidade <- (Contador-1)/2
-      Escreval("Quantidade de n˙meros Ìmpares: ", Quantidade)
+      Escreval("Quantidade de n√∫meros √≠mpares: ", Quantidade)
    fimse
 
 
