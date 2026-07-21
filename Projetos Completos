@@ -1,0 +1,128 @@
+algoritmo "Controle de Estoque"
+var
+
+   Valor , VT : Real
+   Quantidade, D , Contador: Inteiro
+   PV: vetor[0..100] de caracter
+   QtdTeclado, QtdMouse, QtdMonitor, QtdHeadset, QtdNotebook: inteiro
+
+inicio
+
+// Sistema de Controle de Estoque - MW Informática
+// Objetivo: Criar um sistema simples de vendas utilizando lógica de programação.
+// Funcionalidades:
+// - Exibição de catálogo de produtos
+// - Registro de produtos vendidos
+// - Cálculo do valor total da compra
+// - Contagem de quantidade de itens vendidos
+// - Identificação do produto mais vendido
+// Conceitos utilizados:
+// Variáveis, estruturas de repetição, escolha, condições e vetores
+
+   Escreval("    MW Informática")
+   Escreval("------------------------")
+
+   Escreval("Catálogo: ")
+   Escreval("")
+   Escreval("[1] Teclado: R$100,00")
+   Escreval("[2] Mouse: R$50,00")
+   Escreval("[3] Monitor: R$800,00")
+   Escreval("[4] Headset: R$200,00")
+   Escreval("[5] Notebok: R$3000,00")
+   Escreval("")
+   Escreval("------------------------")
+   Escreva("Digite os números correspondentes aos itens:" )
+
+   Leia(D)
+
+   Valor <- 0
+   Quantidade <- 0
+   Contador <- 0
+   QtdTeclado <- 0
+   QtdMouse <- 0
+   QtdMonitor <- 0
+   QtdHeadset <- 0
+   QtdNotebook <- 0
+
+
+   Enquanto (D<>0) faca
+
+      Escolha(D)
+      Caso 1
+         QtdTeclado <- QtdTeclado +1
+         Contador <- Contador +1
+         PV[Contador] <- "Teclado"
+         Valor <- Valor + 100
+
+      Caso 2
+         QtdMouse <- QtdMouse + 1
+         Valor <- Valor + 50
+         Contador <- Contador +1
+         PV[Contador] <- "Mouse"
+
+      Caso 3
+         QtdMonitor <- QtdMonitor +1
+         Valor <- Valor + 800
+         Contador <- Contador +1
+         PV[Contador] <- "Monitor"
+
+      Caso 4
+         QtdHeadset <- QtdHeadset +1
+         Valor <- Valor + 200
+         Contador <- Contador +1
+         PV[Contador] <- "Headset"
+
+      Caso 5
+         QtdNotebook <- QtdNotebook +1
+         Valor <- Valor + 3000
+         Contador <- Contador +1
+         PV[Contador] <- "Notebook"
+      Caso 6
+         Valor <- 0
+
+
+      fimescolha
+      Quantidade <- Quantidade + 1
+
+      Escreva("Digite outro produto, ou 0 para sair.")
+      Leia(D)
+   fimenquanto
+   Escreval("")
+   Escreval("======Relatório de Vendas=======")
+
+   Escreva("Produtos vendidos: ")
+
+   Para D de 1 ate Contador faca
+      Escreva(PV[D])
+      Se D < Contador entao
+         Escreva(", ")
+      Fimse
+
+   Fimpara
+
+   Escreval("")
+   Escreval("Quantidade de itens:", Quantidade)
+   Escreval("")
+
+   Escreval("Valor total: R$" , Valor)
+   Escreval("")
+
+   Se (QtdMouse > QtdMonitor) e (QtdMouse > QtdNotebook) e (QtdMouse > QtdHeadset) e (QtdMouse > QtdTeclado) entao
+      Escreval("Produto mais vendido: Mouse")
+   Senao
+      Se (QtdMonitor > QtdNotebook) e (QtdMonitor > QtdHeadset) e (QtdMonitor > QtdTeclado) entao
+         Escreval("Produto mais vendido: Monitor")
+      Senao
+         Se (QtdNotebook > QtdHeadset) e (QtdNotebook > QtdTeclado) entao
+            Escreval("Produto mais vendido: Notebook")
+         Senao
+            Se (QtdHeadset > QtdTeclado) entao
+               Escreval("Produto mais vendido: Headset")
+            Senao
+               Escreval("Produto mais vendido: Teclado")
+            Fimse
+         Fimse
+      Fimse
+   Fimse
+
+fimalgoritmo
