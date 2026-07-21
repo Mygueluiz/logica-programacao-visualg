@@ -8,30 +8,19 @@ var
 
 inicio
 
-// Sistema de Controle de Estoque - MW Informática
-// Objetivo: Criar um sistema simples de vendas utilizando lógica de programação.
-// Funcionalidades:
-// - Exibição de catálogo de produtos
-// - Registro de produtos vendidos
-// - Cálculo do valor total da compra
-// - Contagem de quantidade de itens vendidos
-// - Identificação do produto mais vendido
-// Conceitos utilizados:
-// Variáveis, estruturas de repetição, escolha, condições e vetores.
+   Escreval("===========================")
+   Escreval("       MW Informática")
+   Escreval("===========================")
 
-   Escreval("    MW Informática")
-   Escreval("------------------------")
-
-   Escreval("Catálogo: ")
-   Escreval("")
-   Escreval("[1] Teclado: R$100,00")
-   Escreval("[2] Mouse: R$50,00")
-   Escreval("[3] Monitor: R$800,00")
-   Escreval("[4] Headset: R$200,00")
-   Escreval("[5] Notebok: R$3000,00")
-   Escreval("")
-   Escreval("------------------------")
-   Escreva("Digite os números correspondentes aos itens:" )
+   Escreval("          Catálogo")
+   Escreval("---------------------------")
+   Escreval("[1] Teclado...... R$100,00")
+   Escreval("[2] Mouse...... R$50,00")
+   Escreval("[3] Monitor...... R$800,00")
+   Escreval("[4] Headset...... R$200,00")
+   Escreval("[5] Notebook...... R$3000,00")
+   Escreval("----------------------------")
+   Escreva("Escolha um produto: " )
 
    Leia(D)
 
@@ -84,20 +73,19 @@ inicio
       fimescolha
       Quantidade <- Quantidade + 1
 
-      Escreva("Digite outro produto, ou 0 para sair.")
+      Escreval("Produto adicionado!")
+      Escreva("Escolha outro produto ou 0 para finalizar: ")
       Leia(D)
    fimenquanto
    Escreval("")
-   Escreval("======Relatório de Vendas=======")
+   Escreval("===========================")
+   Escreval("      Relatório Final")
+   Escreval("===========================")
 
-   Escreva("Produtos vendidos: ")
+   Escreval("Produtos vendidos: ")
 
    Para D de 1 ate Contador faca
-      Escreva(PV[D])
-      Se D < Contador entao
-         Escreva(", ")
-      Fimse
-
+      Escreval("-" ,  PV[D])
    Fimpara
 
    Escreval("")
@@ -124,5 +112,8 @@ inicio
          Fimse
       Fimse
    Fimse
+
+Escreval("")
+Escreval("Obrigado pela preferência!")
 
 fimalgoritmo
