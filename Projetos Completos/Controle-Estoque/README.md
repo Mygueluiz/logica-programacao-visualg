@@ -17,4 +17,5 @@ Programa desenvolvido e testado no Visualg 3.0.7.
 
 ## Demonstração
 
-![Programa funcionando](https://ibb.co/67VxdH9W)
+![Programa funcionando](<img width="410" height="731" alt="image" src="https://github.com/user-attachments/assets/38438eba-850f-4096-a2fd-d3ec25ef40d6" />
+)
