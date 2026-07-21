@@ -16,6 +16,7 @@ Este repositório reúne os exercícios desenvolvidos durante meus estudos de l�
 - Calculadora de IMC
 - Sistema Criança Esperança
 - Cardápio lanchonete
+- Teste de paridade
 
 ## Projetos
 
